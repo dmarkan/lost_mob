@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+body {
+    background-color: #354649;
+}
+
+#img {
+    background-color: #000;
+    width: 600px;
+    height: 400px;
+    margin: 2% 0 0 5%;
+    position: absolute;
+}
+
+#label {
+    background-color: #000;
+    width: 600px;
+    height: 150px;
+    margin-left: 5%;
+    position: absolute;
+    top: 70%;
+}
+
+#label p {
+    color: #E0E7E9;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1%;
+}
+
+#enemy {
+    color: #E0E7E9;
+    font-size: 2rem;
+    position: absolute;
+    margin: 3% 0 0 20%;
+    visibility: hidden;
+}
+
+#label input {
+    width: 100%;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom:0;
+}
+
+#stats {
+    background-color: #000;
+    width: 210px;
+    height: 200px;
+    position: absolute;
+    top: 5%;
+    right:30%
+}
+
+#stats ul {
+    padding:6% 0 0 15%;
+}
+
+#stats li {
+    color:#E0E7E9;
+    font-size: 2rem;
+    list-style: none;
+    padding-top:6% ;
+}
+
+#inv {
+    background-color: #000;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 5%;
+    right:5%
+}
+
+#stick {
+    width: 20%;
+    height: 20%;
+    margin: 5%;
+    visibility: hidden;
+}
+
+#shirt {
+    width: 20%;
+    height: 20%;
+    margin: 5%;
+    visibility: hidden;
+}
+
+#key {
+    width: 20%;
+    height: 20%;
+    margin: 5%;
+    visibility: hidden;
+}
+
+#inv p, #map p {
+    color:#E0E7E9;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#map p {
+    padding-top: 2%;
+}
+
+#map {
+    background-color: #000;
+    width: 550px;
+    height: 350px;
+    position: absolute;
+    top: 40%;
+    right:5%;
+}
+
+#up {
+    background-color: #000;
+    display: inline-block;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top:15%;
+    left:0;
+}
+
+#down {
+    background-color: #000;
+    display: inline-block;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+
+#left {
+    background-color: #000;
+    display: inline-block;
+    width: 33%;
+    height: 83%;
+    position: absolute;
+    left:0;
+    top:17%
+}
+
+#right {
+    background-color: #000;
+    display: inline-block;
+    width: 34%;
+    height: 83%;
+    position: absolute;
+    right:0;
+    top:17%
+}
+
+#map img {
+    width: 100%;
+    height: 85%;
+    padding-top: 2%;
+}
+
+@media (orientation: portrait) {
+    #img {
+        background-color: #000;
+    
+        margin: 2% auto 0 auto;
+        position: absolute;
+    }
+
+    #img {
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+    }
+
+    #label {
+        background-color: #000;
+        width: 100%;
+        margin:0 auto;
+        position: absolute;
+        top: 65%;
+    }
+
+    #map {
+        background-color: #000;
+        margin: 0 auto;
+        position: absolute;
+        top: 90%;
+        right:0;
+        width: 50%;
+        height: 40%;
+    }
+
+    #map p, #inv p {
+        font-size: 1.5rem;
+    }
+
+    #stats {
+        background-color: #000;
+        width: 45%;
+        height: 14%;
+        position: absolute;
+        top: 90%;
+        left:0;
+    }
+
+    #stats li {
+      font-size: 1.3rem;
+      padding: 0;
+      text-align: center;
+    }
+
+    #inv {
+        background-color: #000;
+        position: absolute;
+        top: 105%;
+        width: 45%;
+        height: 25%;
+        left:0;  
+      }
+
+    #label :nth-child(2) {
+        font-size: 1.2rem;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+    #img {
+        background-color: #000;
+        margin: 2% auto 0 1%;
+        position: absolute;
+        width: 50%;
+        height: 60%;
+    }
+
+    #label {
+        background-color: #000;
+        width: 50%;
+        height: 30%;
+        margin:0 1%;
+        position: absolute;
+        top: 64%;
+    }
+
+    #map {
+        background-color: #000;
+        position: absolute;
+        top: 35%;
+        right:2%;
+        width: 45%;
+        height: 58%;
+    }
+
+    #map p, #inv p {
+        font-size: 1.3rem;
+    }
+
+    #stats {
+        background-color: #000;
+        width: 20%;
+        height: 28%;
+        position: absolute;
+        right:27%;
+        top:3%;
+    }
+
+    #stats li {
+      font-size: 1.2rem;
+      padding: 0;
+      text-align: center;
+    }
+
+    #inv {
+        background-color: #000;
+        position: absolute;
+        top: 3%;
+        width: 24%;
+        height: 28%;
+        right:2%;  
+      }
+
+    #label :nth-child(2), #label p {
+        font-size: 1rem;
+    }
+}
